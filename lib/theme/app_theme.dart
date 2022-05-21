@@ -35,7 +35,7 @@ class AppTheme {
     // floatingActionButtonTheme
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        primary: Colors.blue.shade200,
+        primary: primary,
         shape: const StadiumBorder(),
         elevation: 0,
       ),
