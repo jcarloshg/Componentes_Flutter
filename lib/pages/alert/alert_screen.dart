@@ -1,4 +1,6 @@
-import 'package:components_flutter/theme/app_theme.dart';
+import 'dart:io';
+
+import 'package:components_flutter/pages/alert/Widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class AlertScreen extends StatelessWidget {
@@ -11,15 +13,33 @@ class AlertScreen extends StatelessWidget {
         title: const Text("AlertScreen"),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {},
-          child: const Padding(
-            padding: EdgeInsets.all(20),
-            child: Text(
-              "Mostrar una alerta",
-              style: TextStyle(fontSize: 16),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              child: const Padding(
+                padding: EdgeInsets.all(20),
+                child: Text(
+                  "Mostrar una alerta ANDROID",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+              onPressed: () => Platform.isIOS
+                  ? displayDialogIOS(context)
+                  : displayDialogAndroid(context),
             ),
-          ),
+            const SizedBox(height: 15),
+            ElevatedButton(
+              child: const Padding(
+                padding: EdgeInsets.all(20),
+                child: Text(
+                  "Mostrar una alerta IOS",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+              onPressed: () => displayDialogIOS(context),
+            ),
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
