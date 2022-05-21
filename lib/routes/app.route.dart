@@ -36,6 +36,11 @@ class AppRoutes {
         name: 'Avatars',
         screen: const AvatarScreen(),
         iconData: Icons.supervised_user_circle_rounded),
+    MenuOption(
+        route: 'AnimatedScreen',
+        name: 'Animaciones :)',
+        screen: const AnimatedScreen(),
+        iconData: Icons.animation_sharp),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRputes() {
