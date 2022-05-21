@@ -41,6 +41,11 @@ class AppRoutes {
         name: 'Animaciones :)',
         screen: const AnimatedScreen(),
         iconData: Icons.animation_sharp),
+    MenuOption(
+        route: 'InputsScreen',
+        name: 'Text inputs',
+        screen: const InputsScreen(),
+        iconData: Icons.input_sharp),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRputes() {
