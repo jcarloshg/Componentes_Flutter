@@ -34,6 +34,24 @@ class _SliderScreenState extends State<SliderScreen> {
             value: _sliderEnable,
             onChanged: (value) => setState(() => _sliderEnable = value ?? true),
           ),
+          CheckboxListTile(
+            title: const Text('Habilitar slider'),
+            // tileColor: AppTheme.primary,
+            activeColor: AppTheme.primary,
+            value: _sliderEnable,
+            onChanged: (value) => setState(() => _sliderEnable = value ?? true),
+          ),
+          Switch(
+            value: _sliderEnable,
+            onChanged: (value) => setState(() => _sliderEnable = value),
+          ),
+          SwitchListTile(
+            title: const Text('Activar slider'),
+            activeColor: AppTheme.primary,
+            value: _sliderEnable,
+            onChanged: (value) => setState(() => _sliderEnable = value),
+          ),
+          const AboutListTile(),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
