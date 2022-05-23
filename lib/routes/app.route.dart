@@ -51,6 +51,11 @@ class AppRoutes {
         name: 'Slider screen ',
         screen: const SliderScreen(),
         iconData: Icons.sledding),
+    MenuOption(
+        route: 'ListViewBuilderScreen',
+        name: 'Slider screen ',
+        screen: const ListViewBuilderScreen(),
+        iconData: Icons.list_alt),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRputes() {
