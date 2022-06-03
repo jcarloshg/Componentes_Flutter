@@ -23,7 +23,8 @@ class AvatarScreen extends StatelessWidget {
         child: CircleAvatar(
           maxRadius: 100,
           backgroundImage: NetworkImage(
-              "https://scontent.fpbc2-3.fna.fbcdn.net/v/t39.30808-6/271737391_2702881153354236_1375726906847636604_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGFlOU2-fxg1dZTmlbTcNdM6qe7lQaFodLqp7uVBoWh0tcoUNgl69_enyfLGMZZ38OszSNnemJwGGy3dyLonDZ0&_nc_ohc=MFMG9QAIbIYAX8875Q9&_nc_ht=scontent.fpbc2-3.fna&oh=00_AT-y7boclhTFo9C5jZN9F_-jAfZJ9jUWoQT9J1db3THSTg&oe=628DA651"),
+            "https://avatars.githubusercontent.com/u/45737620?s=400&u=1cb6a15045ab77d12378bae05bc3d00e9b7d72fa&v=4",
+          ),
         ),
       ),
     );

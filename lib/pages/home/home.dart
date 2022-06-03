@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home jeje'),
+        title: const Text('Home, components Flutter'),
         elevation: 0,
       ),
       body: ListView.separated(
